@@ -1,0 +1,6 @@
+framework module Pods_EasyMessageEasyCall {
+  umbrella header "Pods-EasyMessageEasyCall-umbrella.h"
+
+  export *
+  module * { export * }
+}

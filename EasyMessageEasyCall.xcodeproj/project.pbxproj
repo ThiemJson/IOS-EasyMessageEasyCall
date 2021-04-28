@@ -3,27 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2179FF721C195FF14825E689 /* Pods_EasyMessageEasyCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D003F75D89CF1E074F517140 /* Pods_EasyMessageEasyCall.framework */; };
 		3C8ADDE92639ADC100A0C116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8ADDE82639ADC100A0C116 /* AppDelegate.swift */; };
 		3C8ADDEB2639ADC100A0C116 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8ADDEA2639ADC100A0C116 /* SceneDelegate.swift */; };
-		3C8ADDED2639ADC100A0C116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8ADDEC2639ADC100A0C116 /* ViewController.swift */; };
-		3C8ADDF02639ADC100A0C116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8ADDEE2639ADC100A0C116 /* Main.storyboard */; };
 		3C8ADDF22639ADC100A0C116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8ADDF12639ADC100A0C116 /* Assets.xcassets */; };
 		3C8ADDF52639ADC100A0C116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8ADDF32639ADC100A0C116 /* LaunchScreen.storyboard */; };
+		3C8ADE022639AF0B00A0C116 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8ADE002639AF0B00A0C116 /* LoginViewController.swift */; };
+		3C8ADE032639AF0B00A0C116 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8ADE012639AF0B00A0C116 /* LoginViewController.xib */; };
+		3C8ADE0F2639BAD000A0C116 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8ADE0E2639BAD000A0C116 /* LoginFormView.swift */; };
+		3C8ADE122639BADD00A0C116 /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8ADE112639BADD00A0C116 /* LoginFormView.xib */; };
+		3C8E9D952639C2470050E1E6 /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E9D942639C2470050E1E6 /* LineButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BA8B5482A3E83EE1B3D32D3 /* Pods-EasyMessageEasyCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMessageEasyCall.debug.xcconfig"; path = "Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall.debug.xcconfig"; sourceTree = "<group>"; };
 		3C8ADDE52639ADC100A0C116 /* EasyMessageEasyCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMessageEasyCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8ADDE82639ADC100A0C116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C8ADDEA2639ADC100A0C116 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C8ADDEC2639ADC100A0C116 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3C8ADDEF2639ADC100A0C116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C8ADDF12639ADC100A0C116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C8ADDF42639ADC100A0C116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C8ADDF62639ADC100A0C116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8ADE002639AF0B00A0C116 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3C8ADE012639AF0B00A0C116 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3C8ADE0E2639BAD000A0C116 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
+		3C8ADE112639BADD00A0C116 /* LoginFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
+		3C8E9D942639C2470050E1E6 /* LineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
+		40F3EC001F90CD6BB9EC1B2B /* Pods-EasyMessageEasyCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMessageEasyCall.release.xcconfig"; path = "Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall.release.xcconfig"; sourceTree = "<group>"; };
+		D003F75D89CF1E074F517140 /* Pods_EasyMessageEasyCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMessageEasyCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2179FF721C195FF14825E689 /* Pods_EasyMessageEasyCall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				3C8ADDE72639ADC100A0C116 /* EasyMessageEasyCall */,
 				3C8ADDE62639ADC100A0C116 /* Products */,
+				439F89315B2AB06E982AFD27 /* Pods */,
+				D0048F6FC5D24AFA99CB9B4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,83 @@
 		3C8ADDE72639ADC100A0C116 /* EasyMessageEasyCall */ = {
 			isa = PBXGroup;
 			children = (
+				3C8ADE0B2639BA0800A0C116 /* uitils */,
+				3C8ADDFD2639AEDB00A0C116 /* main */,
 				3C8ADDE82639ADC100A0C116 /* AppDelegate.swift */,
 				3C8ADDEA2639ADC100A0C116 /* SceneDelegate.swift */,
-				3C8ADDEC2639ADC100A0C116 /* ViewController.swift */,
-				3C8ADDEE2639ADC100A0C116 /* Main.storyboard */,
 				3C8ADDF12639ADC100A0C116 /* Assets.xcassets */,
 				3C8ADDF32639ADC100A0C116 /* LaunchScreen.storyboard */,
 				3C8ADDF62639ADC100A0C116 /* Info.plist */,
 			);
 			path = EasyMessageEasyCall;
+			sourceTree = "<group>";
+		};
+		3C8ADDFD2639AEDB00A0C116 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				3C8ADDFF2639AEFD00A0C116 /* videocall */,
+				3C8ADDFE2639AEE800A0C116 /* login */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		3C8ADDFE2639AEE800A0C116 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				3C8ADE082639B8FA00A0C116 /* login-firebase */,
+				3C8ADE002639AF0B00A0C116 /* LoginViewController.swift */,
+				3C8ADE012639AF0B00A0C116 /* LoginViewController.xib */,
+				3C8ADE0E2639BAD000A0C116 /* LoginFormView.swift */,
+				3C8ADE112639BADD00A0C116 /* LoginFormView.xib */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		3C8ADDFF2639AEFD00A0C116 /* videocall */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = videocall;
+			sourceTree = "<group>";
+		};
+		3C8ADE082639B8FA00A0C116 /* login-firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "login-firebase";
+			sourceTree = "<group>";
+		};
+		3C8ADE0B2639BA0800A0C116 /* uitils */ = {
+			isa = PBXGroup;
+			children = (
+				3C8ADE0C2639BA1000A0C116 /* custom */,
+			);
+			path = uitils;
+			sourceTree = "<group>";
+		};
+		3C8ADE0C2639BA1000A0C116 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				3C8E9D942639C2470050E1E6 /* LineButton.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		439F89315B2AB06E982AFD27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BA8B5482A3E83EE1B3D32D3 /* Pods-EasyMessageEasyCall.debug.xcconfig */,
+				40F3EC001F90CD6BB9EC1B2B /* Pods-EasyMessageEasyCall.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0048F6FC5D24AFA99CB9B4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D003F75D89CF1E074F517140 /* Pods_EasyMessageEasyCall.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C8ADDF92639ADC100A0C116 /* Build configuration list for PBXNativeTarget "EasyMessageEasyCall" */;
 			buildPhases = (
+				3C950C28AA71857A1AAA8909 /* [CP] Check Pods Manifest.lock */,
 				3C8ADDE12639ADC100A0C116 /* Sources */,
 				3C8ADDE22639ADC100A0C116 /* Frameworks */,
 				3C8ADDE32639ADC100A0C116 /* Resources */,
+				E8A94C900D6716DF0ADC25E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,21 +207,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8ADE032639AF0B00A0C116 /* LoginViewController.xib in Resources */,
 				3C8ADDF52639ADC100A0C116 /* LaunchScreen.storyboard in Resources */,
+				3C8ADE122639BADD00A0C116 /* LoginFormView.xib in Resources */,
 				3C8ADDF22639ADC100A0C116 /* Assets.xcassets in Resources */,
-				3C8ADDF02639ADC100A0C116 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C950C28AA71857A1AAA8909 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyMessageEasyCall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A94C900D6716DF0ADC25E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C8ADDE12639ADC100A0C116 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C8ADDED2639ADC100A0C116 /* ViewController.swift in Sources */,
+				3C8ADE022639AF0B00A0C116 /* LoginViewController.swift in Sources */,
 				3C8ADDE92639ADC100A0C116 /* AppDelegate.swift in Sources */,
+				3C8E9D952639C2470050E1E6 /* LineButton.swift in Sources */,
+				3C8ADE0F2639BAD000A0C116 /* LoginFormView.swift in Sources */,
 				3C8ADDEB2639ADC100A0C116 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +274,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3C8ADDEE2639ADC100A0C116 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C8ADDEF2639ADC100A0C116 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3C8ADDF32639ADC100A0C116 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +403,7 @@
 		};
 		3C8ADDFA2639ADC100A0C116 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA8B5482A3E83EE1B3D32D3 /* Pods-EasyMessageEasyCall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +423,7 @@
 		};
 		3C8ADDFB2639ADC100A0C116 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F3EC001F90CD6BB9EC1B2B /* Pods-EasyMessageEasyCall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
