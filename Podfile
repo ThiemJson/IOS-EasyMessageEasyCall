@@ -7,5 +7,6 @@ target 'EasyMessageEasyCall' do
 
   # Pods for EasyMessageEasyCall
   pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
 
 end

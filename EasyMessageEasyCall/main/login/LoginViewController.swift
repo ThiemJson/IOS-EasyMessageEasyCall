@@ -6,24 +6,43 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
-
+    @IBOutlet weak var loginFacebookViewButton: UIView!
+    @IBOutlet weak var loginGoogleViewButton: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        viewInitial()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    private func viewInitial(){
+        // Config Facebook login Button
+        let fbloginButton = FBLoginButton()
+        fbloginButton.delegate  = self
+        loginFacebookViewButton.layer.masksToBounds = true
+        fbloginButton.frame = loginFacebookViewButton.bounds
+        loginFacebookViewButton.addSubview(fbloginButton)
+        
+        // Config Google login Button
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        let ggLoginButton = GIDSignInButton()
+        ggLoginButton.frame = loginGoogleViewButton.bounds
+        loginGoogleViewButton.addSubview(ggLoginButton)
     }
-    */
+}
 
+extension LoginViewController: LoginButtonDelegate {
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        // Todo
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        // Todo
+    }
+    
+    
 }

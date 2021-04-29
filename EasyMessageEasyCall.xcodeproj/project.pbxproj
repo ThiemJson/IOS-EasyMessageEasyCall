@@ -17,6 +17,8 @@
 		3C8ADE0F2639BAD000A0C116 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8ADE0E2639BAD000A0C116 /* LoginFormView.swift */; };
 		3C8ADE122639BADD00A0C116 /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8ADE112639BADD00A0C116 /* LoginFormView.xib */; };
 		3C8E9D952639C2470050E1E6 /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E9D942639C2470050E1E6 /* LineButton.swift */; };
+		6349765B263A4C16008841C9 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6349765A263A4C16008841C9 /* Configure.swift */; };
+		6349765E263A4C85008841C9 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6349765D263A4C85008841C9 /* credentials.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		3C8ADE112639BADD00A0C116 /* LoginFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
 		3C8E9D942639C2470050E1E6 /* LineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
 		40F3EC001F90CD6BB9EC1B2B /* Pods-EasyMessageEasyCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMessageEasyCall.release.xcconfig"; path = "Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall.release.xcconfig"; sourceTree = "<group>"; };
+		6349765A263A4C16008841C9 /* Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
+		6349765D263A4C85008841C9 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		D003F75D89CF1E074F517140 /* Pods_EasyMessageEasyCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMessageEasyCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,7 @@
 				3C8ADDEA2639ADC100A0C116 /* SceneDelegate.swift */,
 				3C8ADDF12639ADC100A0C116 /* Assets.xcassets */,
 				3C8ADDF32639ADC100A0C116 /* LaunchScreen.storyboard */,
+				6349765D263A4C85008841C9 /* credentials.plist */,
 				3C8ADDF62639ADC100A0C116 /* Info.plist */,
 			);
 			path = EasyMessageEasyCall;
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3C8ADE0C2639BA1000A0C116 /* custom */,
+				6349765A263A4C16008841C9 /* Configure.swift */,
 			);
 			path = uitils;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 				3C8ADDE22639ADC100A0C116 /* Frameworks */,
 				3C8ADDE32639ADC100A0C116 /* Resources */,
 				E8A94C900D6716DF0ADC25E2 /* [CP] Embed Pods Frameworks */,
+				2FF05C0D038B1B58E690384E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +216,7 @@
 			files = (
 				3C8ADE032639AF0B00A0C116 /* LoginViewController.xib in Resources */,
 				3C8ADDF52639ADC100A0C116 /* LaunchScreen.storyboard in Resources */,
+				6349765E263A4C85008841C9 /* credentials.plist in Resources */,
 				3C8ADE122639BADD00A0C116 /* LoginFormView.xib in Resources */,
 				3C8ADDF22639ADC100A0C116 /* Assets.xcassets in Resources */,
 			);
@@ -217,6 +225,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2FF05C0D038B1B58E690384E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3C950C28AA71857A1AAA8909 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +290,7 @@
 			files = (
 				3C8ADE022639AF0B00A0C116 /* LoginViewController.swift in Sources */,
 				3C8ADDE92639ADC100A0C116 /* AppDelegate.swift in Sources */,
+				6349765B263A4C16008841C9 /* Configure.swift in Sources */,
 				3C8E9D952639C2470050E1E6 /* LineButton.swift in Sources */,
 				3C8ADE0F2639BAD000A0C116 /* LoginFormView.swift in Sources */,
 				3C8ADDEB2639ADC100A0C116 /* SceneDelegate.swift in Sources */,
