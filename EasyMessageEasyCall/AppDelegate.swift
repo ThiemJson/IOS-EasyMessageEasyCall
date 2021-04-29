@@ -8,6 +8,7 @@
 import UIKit
 import FBSDKCoreKit
 import GoogleSignIn
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -21,21 +22,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
             return
           }
-          // Perform any operations on signed in user here.
-//          let userId = user.userID                  // For client-side use only!
-//          let idToken = user.authentication.idToken // Safe to send to the server
-//          let fullName = user.profile.name
-//          let givenName = user.profile.givenName
-//          let familyName = user.profile.familyName
-//          let email = user.profile.email
+        
+        debugPrint("====> LOGGED IN WITH GOOGLE <====")
+        debugPrint(user.userID!);
+        debugPrint(user.authentication.idToken!);
+        debugPrint(user.profile.name!);
+        debugPrint(user.profile.givenName!);
+        debugPrint(user.profile.familyName!);
+        debugPrint(user.profile.email!);
+        debugPrint("====> --------------------- <====")
+          
+        UIApplication.shared.windows.first?.rootViewController = HomeViewController()
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+        
+        Configure.LOGGED_IN_WITH = LoginWith.Google
     }
     
     func application( _ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? ) -> Bool { ApplicationDelegate.shared.application( application, didFinishLaunchingWithOptions: launchOptions );
         
         // Initialize sign-in
         GIDSignIn.sharedInstance().clientID = Configure.GOOGLE_CLIENT_ID
-          GIDSignIn.sharedInstance().delegate = self
-
+        GIDSignIn.sharedInstance().delegate = self
+        
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
         return true
     }
     

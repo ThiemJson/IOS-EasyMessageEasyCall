@@ -12,6 +12,14 @@ import GoogleSignIn
 class LoginViewController: UIViewController {
     @IBOutlet weak var loginFacebookViewButton: UIView!
     @IBOutlet weak var loginGoogleViewButton: UIView!
+    @IBOutlet weak var loginFirebaseViewButton: UIView!
+
+    @IBAction func loginFirebase(_ sender: Any) {
+        navigationController?.pushViewController(LoginFirebaseViewController(), animated: true)
+//        let loginFirebaseVC = LoginFirebaseViewController()
+//        navigationController?.present(loginFirebaseVC, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,6 +28,9 @@ class LoginViewController: UIViewController {
     }
     
     private func viewInitial(){
+        // Hide tabbar
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
         // Config Facebook login Button
         let fbloginButton = FBLoginButton()
         fbloginButton.delegate  = self
@@ -37,10 +48,16 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginButtonDelegate {
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        debugPrint("==> FACEBOOK ACCESS: \(String(describing: result?.token?.userID))")
+        Configure.LOGGED_IN_WITH = LoginWith.Facebook
+        
+        UIApplication.shared.windows.first?.rootViewController = HomeViewController()
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
         // Todo
     }
     
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        debugPrint("==> FACEBOOK Logged Out")
         // Todo
     }
     

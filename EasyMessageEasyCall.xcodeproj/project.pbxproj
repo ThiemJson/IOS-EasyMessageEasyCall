@@ -14,11 +14,19 @@
 		3C8ADDF52639ADC100A0C116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8ADDF32639ADC100A0C116 /* LaunchScreen.storyboard */; };
 		3C8ADE022639AF0B00A0C116 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8ADE002639AF0B00A0C116 /* LoginViewController.swift */; };
 		3C8ADE032639AF0B00A0C116 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8ADE012639AF0B00A0C116 /* LoginViewController.xib */; };
-		3C8ADE0F2639BAD000A0C116 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8ADE0E2639BAD000A0C116 /* LoginFormView.swift */; };
-		3C8ADE122639BADD00A0C116 /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8ADE112639BADD00A0C116 /* LoginFormView.xib */; };
 		3C8E9D952639C2470050E1E6 /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E9D942639C2470050E1E6 /* LineButton.swift */; };
 		6349765B263A4C16008841C9 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6349765A263A4C16008841C9 /* Configure.swift */; };
 		6349765E263A4C85008841C9 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6349765D263A4C85008841C9 /* credentials.plist */; };
+		63497664263A5348008841C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63497663263A5348008841C9 /* GoogleService-Info.plist */; };
+		6349767C263A56C3008841C9 /* LoginFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6349767A263A56C3008841C9 /* LoginFirebaseViewController.swift */; };
+		6349767D263A56C3008841C9 /* LoginFirebaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6349767B263A56C3008841C9 /* LoginFirebaseViewController.xib */; };
+		63497680263A5861008841C9 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6349767F263A5861008841C9 /* FancyButton.swift */; };
+		63497684263A68F7008841C9 /* LoginFirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63497683263A68F7008841C9 /* LoginFirebaseViewModel.swift */; };
+		63497688263A6955008841C9 /* FirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63497687263A6955008841C9 /* FirebaseUser.swift */; };
+		6349768C263A72A1008841C9 /* FirebaseSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6349768A263A72A1008841C9 /* FirebaseSignUpViewController.swift */; };
+		6349768D263A72A1008841C9 /* FirebaseSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6349768B263A72A1008841C9 /* FirebaseSignUpViewController.xib */; };
+		63497692263A7966008841C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63497690263A7966008841C9 /* HomeViewController.swift */; };
+		63497693263A7966008841C9 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63497691263A7966008841C9 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +39,20 @@
 		3C8ADDF62639ADC100A0C116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C8ADE002639AF0B00A0C116 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3C8ADE012639AF0B00A0C116 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		3C8ADE0E2639BAD000A0C116 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
-		3C8ADE112639BADD00A0C116 /* LoginFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
 		3C8E9D942639C2470050E1E6 /* LineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
 		40F3EC001F90CD6BB9EC1B2B /* Pods-EasyMessageEasyCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMessageEasyCall.release.xcconfig"; path = "Target Support Files/Pods-EasyMessageEasyCall/Pods-EasyMessageEasyCall.release.xcconfig"; sourceTree = "<group>"; };
 		6349765A263A4C16008841C9 /* Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
 		6349765D263A4C85008841C9 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		63497663263A5348008841C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6349767A263A56C3008841C9 /* LoginFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseViewController.swift; sourceTree = "<group>"; };
+		6349767B263A56C3008841C9 /* LoginFirebaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFirebaseViewController.xib; sourceTree = "<group>"; };
+		6349767F263A5861008841C9 /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		63497683263A68F7008841C9 /* LoginFirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseViewModel.swift; sourceTree = "<group>"; };
+		63497687263A6955008841C9 /* FirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUser.swift; sourceTree = "<group>"; };
+		6349768A263A72A1008841C9 /* FirebaseSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSignUpViewController.swift; sourceTree = "<group>"; };
+		6349768B263A72A1008841C9 /* FirebaseSignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirebaseSignUpViewController.xib; sourceTree = "<group>"; };
+		63497690263A7966008841C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		63497691263A7966008841C9 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		D003F75D89CF1E074F517140 /* Pods_EasyMessageEasyCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMessageEasyCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +95,7 @@
 				3C8ADDEA2639ADC100A0C116 /* SceneDelegate.swift */,
 				3C8ADDF12639ADC100A0C116 /* Assets.xcassets */,
 				3C8ADDF32639ADC100A0C116 /* LaunchScreen.storyboard */,
+				63497663263A5348008841C9 /* GoogleService-Info.plist */,
 				6349765D263A4C85008841C9 /* credentials.plist */,
 				3C8ADDF62639ADC100A0C116 /* Info.plist */,
 			);
@@ -88,7 +105,7 @@
 		3C8ADDFD2639AEDB00A0C116 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				3C8ADDFF2639AEFD00A0C116 /* videocall */,
+				6349768F263A7941008841C9 /* home */,
 				3C8ADDFE2639AEE800A0C116 /* login */,
 			);
 			path = main;
@@ -97,27 +114,11 @@
 		3C8ADDFE2639AEE800A0C116 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				3C8ADE082639B8FA00A0C116 /* login-firebase */,
+				63497679263A568D008841C9 /* loginfirebase */,
 				3C8ADE002639AF0B00A0C116 /* LoginViewController.swift */,
 				3C8ADE012639AF0B00A0C116 /* LoginViewController.xib */,
-				3C8ADE0E2639BAD000A0C116 /* LoginFormView.swift */,
-				3C8ADE112639BADD00A0C116 /* LoginFormView.xib */,
 			);
 			path = login;
-			sourceTree = "<group>";
-		};
-		3C8ADDFF2639AEFD00A0C116 /* videocall */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = videocall;
-			sourceTree = "<group>";
-		};
-		3C8ADE082639B8FA00A0C116 /* login-firebase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "login-firebase";
 			sourceTree = "<group>";
 		};
 		3C8ADE0B2639BA0800A0C116 /* uitils */ = {
@@ -133,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				3C8E9D942639C2470050E1E6 /* LineButton.swift */,
+				6349767F263A5861008841C9 /* FancyButton.swift */,
 			);
 			path = custom;
 			sourceTree = "<group>";
@@ -144,6 +146,36 @@
 				40F3EC001F90CD6BB9EC1B2B /* Pods-EasyMessageEasyCall.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		63497679263A568D008841C9 /* loginfirebase */ = {
+			isa = PBXGroup;
+			children = (
+				63497686263A693D008841C9 /* model */,
+				6349767A263A56C3008841C9 /* LoginFirebaseViewController.swift */,
+				6349767B263A56C3008841C9 /* LoginFirebaseViewController.xib */,
+				63497683263A68F7008841C9 /* LoginFirebaseViewModel.swift */,
+				6349768A263A72A1008841C9 /* FirebaseSignUpViewController.swift */,
+				6349768B263A72A1008841C9 /* FirebaseSignUpViewController.xib */,
+			);
+			path = loginfirebase;
+			sourceTree = "<group>";
+		};
+		63497686263A693D008841C9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				63497687263A6955008841C9 /* FirebaseUser.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6349768F263A7941008841C9 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				63497690263A7966008841C9 /* HomeViewController.swift */,
+				63497691263A7966008841C9 /* HomeViewController.xib */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 		D0048F6FC5D24AFA99CB9B4C /* Frameworks */ = {
@@ -216,9 +248,12 @@
 			files = (
 				3C8ADE032639AF0B00A0C116 /* LoginViewController.xib in Resources */,
 				3C8ADDF52639ADC100A0C116 /* LaunchScreen.storyboard in Resources */,
+				6349768D263A72A1008841C9 /* FirebaseSignUpViewController.xib in Resources */,
 				6349765E263A4C85008841C9 /* credentials.plist in Resources */,
-				3C8ADE122639BADD00A0C116 /* LoginFormView.xib in Resources */,
 				3C8ADDF22639ADC100A0C116 /* Assets.xcassets in Resources */,
+				63497664263A5348008841C9 /* GoogleService-Info.plist in Resources */,
+				6349767D263A56C3008841C9 /* LoginFirebaseViewController.xib in Resources */,
+				63497693263A7966008841C9 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,9 +326,14 @@
 				3C8ADE022639AF0B00A0C116 /* LoginViewController.swift in Sources */,
 				3C8ADDE92639ADC100A0C116 /* AppDelegate.swift in Sources */,
 				6349765B263A4C16008841C9 /* Configure.swift in Sources */,
+				63497680263A5861008841C9 /* FancyButton.swift in Sources */,
+				6349767C263A56C3008841C9 /* LoginFirebaseViewController.swift in Sources */,
+				6349768C263A72A1008841C9 /* FirebaseSignUpViewController.swift in Sources */,
+				63497684263A68F7008841C9 /* LoginFirebaseViewModel.swift in Sources */,
+				63497692263A7966008841C9 /* HomeViewController.swift in Sources */,
 				3C8E9D952639C2470050E1E6 /* LineButton.swift in Sources */,
-				3C8ADE0F2639BAD000A0C116 /* LoginFormView.swift in Sources */,
 				3C8ADDEB2639ADC100A0C116 /* SceneDelegate.swift in Sources */,
+				63497688263A6955008841C9 /* FirebaseUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

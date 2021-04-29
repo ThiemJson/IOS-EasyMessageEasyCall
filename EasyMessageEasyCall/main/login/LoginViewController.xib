@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="EasyMessageEasyCall" customModuleProvider="target">
             <connections>
                 <outlet property="loginFacebookViewButton" destination="poE-TQ-S5Q" id="Xzq-6O-um7"/>
+                <outlet property="loginFirebaseViewButton" destination="Ugt-qv-tTf" id="P5k-Yf-Ne9"/>
                 <outlet property="loginGoogleViewButton" destination="c99-Pd-5yj" id="ASn-GO-x2n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,82 +32,85 @@
                         <constraint firstAttribute="width" secondItem="371-Xm-PTs" secondAttribute="height" multiplier="1:1" id="OPT-eK-Gvk"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-qv-tTf" customClass="LineButton" customModule="EasyMessageEasyCall" customModuleProvider="target">
-                    <rect key="frame" x="41" y="354" width="335" height="50"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="dT4-Tl-Mlh">
+                    <rect key="frame" x="41" y="354" width="335" height="240"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-qv-tTf" customClass="LineButton" customModule="EasyMessageEasyCall" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="EUZ-vE-8Uq"/>
+                            </constraints>
+                            <color key="tintColor" red="0.078431372549019607" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="SIGN IN WITH EMAIL" image="email">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" name="AccentColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="imageRightPadding">
+                                    <real key="value" value="51"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginFirebase:" destination="-1" eventType="touchUpInside" id="f7v-UH-qB8"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poE-TQ-S5Q">
+                            <rect key="frame" x="0.0" y="96" width="335" height="49"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="poE-TQ-S5Q" secondAttribute="height" multiplier="335:49" id="15z-61-GeJ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c99-Pd-5yj">
+                            <rect key="frame" x="0.0" y="191" width="335" height="49"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="c99-Pd-5yj" secondAttribute="height" multiplier="335:49" id="qb4-eV-Lkt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="EUZ-vE-8Uq"/>
+                        <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="height" multiplier="67:10" id="CBb-bo-5XY"/>
+                        <constraint firstItem="c99-Pd-5yj" firstAttribute="height" secondItem="poE-TQ-S5Q" secondAttribute="height" id="E4X-eu-rVK"/>
+                        <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="height" multiplier="67:10" id="Nvg-8t-xu4"/>
+                        <constraint firstItem="c99-Pd-5yj" firstAttribute="width" secondItem="poE-TQ-S5Q" secondAttribute="width" id="YJw-mc-p58"/>
+                        <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="height" multiplier="67:10" id="afi-fs-ft3"/>
+                        <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="width" id="fgd-Sy-tBJ"/>
+                        <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="height" multiplier="67:10" id="uDi-b0-fKk"/>
                     </constraints>
-                    <color key="tintColor" red="0.078431372549019607" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="SIGN IN WITH EMAIL" image="email">
-                        <color key="titleColor" red="0.078431372549019607" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" red="0.078431372549019607" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                            <real key="value" value="3"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="0.0"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
-                            <color key="value" name="AccentColor"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
-                            <real key="value" value="0.0"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="imageRightPadding">
-                            <real key="value" value="51"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poE-TQ-S5Q">
-                    <rect key="frame" x="41" y="468.66666666666669" width="335" height="49.000000000000057"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="poE-TQ-S5Q" secondAttribute="height" multiplier="335:49" id="15z-61-GeJ"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c99-Pd-5yj">
-                    <rect key="frame" x="41" y="545.66666666666663" width="335" height="49"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="c99-Pd-5yj" secondAttribute="height" multiplier="335:49" id="qb4-eV-Lkt"/>
-                    </constraints>
-                </view>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.90980392156862744" green="0.92156862745098034" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="ofx-nu-cZi" secondAttribute="bottom" id="0sX-j4-eVz"/>
                 <constraint firstAttribute="bottom" secondItem="ofx-nu-cZi" secondAttribute="bottom" id="3Zp-nr-LI6"/>
-                <constraint firstItem="c99-Pd-5yj" firstAttribute="width" secondItem="poE-TQ-S5Q" secondAttribute="width" id="88p-8t-qbq"/>
                 <constraint firstItem="371-Xm-PTs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="113" id="8CE-rL-aE9"/>
                 <constraint firstItem="ofx-nu-cZi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8t8-uQ-MOn"/>
-                <constraint firstItem="Ugt-qv-tTf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="41" id="Ejs-NN-CmM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="371-Xm-PTs" secondAttribute="trailing" constant="107" id="JxS-mr-cgc"/>
-                <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="height" multiplier="67:10" id="M6k-QU-uE5"/>
-                <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="height" multiplier="67:10" id="Nuw-gv-nC8"/>
-                <constraint firstItem="poE-TQ-S5Q" firstAttribute="leading" secondItem="Ugt-qv-tTf" secondAttribute="trailing" constant="-335" id="RoJ-mm-aQi"/>
                 <constraint firstItem="ofx-nu-cZi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="S0V-HL-5Cp"/>
-                <constraint firstItem="poE-TQ-S5Q" firstAttribute="firstBaseline" secondItem="Ugt-qv-tTf" secondAttribute="baseline" constant="83.5" id="Tz1-2b-WHr"/>
-                <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="width" id="XrB-k8-qci"/>
-                <constraint firstItem="c99-Pd-5yj" firstAttribute="height" secondItem="poE-TQ-S5Q" secondAttribute="height" id="ZPt-DT-rUy"/>
                 <constraint firstAttribute="trailing" secondItem="ofx-nu-cZi" secondAttribute="trailing" id="cug-sM-Zke"/>
+                <constraint firstItem="dT4-Tl-Mlh" firstAttribute="top" secondItem="371-Xm-PTs" secondAttribute="bottom" constant="41" id="d4k-A4-M5Z"/>
                 <constraint firstItem="ofx-nu-cZi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gBi-ii-pEe"/>
-                <constraint firstItem="c99-Pd-5yj" firstAttribute="centerX" secondItem="poE-TQ-S5Q" secondAttribute="centerX" id="j1E-Cg-s1m"/>
                 <constraint firstItem="ofx-nu-cZi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k04-6C-spt"/>
                 <constraint firstItem="371-Xm-PTs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="107" id="lND-wa-fNK"/>
-                <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="height" multiplier="67:10" id="ltw-PP-vYm"/>
-                <constraint firstItem="poE-TQ-S5Q" firstAttribute="leading" secondItem="Ugt-qv-tTf" secondAttribute="leading" id="mBg-g2-enu"/>
-                <constraint firstAttribute="bottom" secondItem="Ugt-qv-tTf" secondAttribute="bottom" constant="332" id="qoK-en-ubr"/>
-                <constraint firstItem="poE-TQ-S5Q" firstAttribute="width" secondItem="Ugt-qv-tTf" secondAttribute="height" multiplier="67:10" id="rDa-vI-I5i"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ugt-qv-tTf" secondAttribute="trailing" constant="38" id="sPq-Xx-1xS"/>
-                <constraint firstItem="c99-Pd-5yj" firstAttribute="top" secondItem="poE-TQ-S5Q" secondAttribute="bottom" constant="28" id="vzw-sR-zGE"/>
+                <constraint firstItem="dT4-Tl-Mlh" firstAttribute="leading" secondItem="371-Xm-PTs" secondAttribute="trailing" constant="-266" id="sha-pg-SSP"/>
                 <constraint firstItem="ofx-nu-cZi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="wKX-ax-P57"/>
-                <constraint firstItem="poE-TQ-S5Q" firstAttribute="leading" secondItem="Ugt-qv-tTf" secondAttribute="leading" id="yz5-xy-jYE"/>
             </constraints>
             <point key="canvasLocation" x="-152.17391304347828" y="88.392857142857139"/>
         </view>

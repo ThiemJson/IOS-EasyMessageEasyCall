@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FBSDKLoginKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,11 +18,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = LoginViewController() // Your initial view controller.
-            window.makeKeyAndVisible()
-            self.window = window
+        let loginVC = LoginViewController();
+        let navigationVC = UINavigationController(rootViewController: loginVC)
+            window.rootViewController = navigationVC
+        
+        // Check firebase user
+        if let _ = Auth.auth().currentUser {
+            navigationVC.pushViewController(HomeViewController(), animated: true)
+        }
+        
+        // Check facebook user
+        if let _ = AccessToken.current?.tokenString {
+            navigationVC.pushViewController(HomeViewController(), animated: true)
+        }
+        
+        window.makeKeyAndVisible()
+        self.window = window
+        
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="EasyMessageEasyCall" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="mrX-1h-R4N" id="JLt-03-KbN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGGED IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrX-1h-R4N">
+                    <rect key="frame" x="162.66666666666666" y="357.33333333333331" width="88.666666666666657" height="21.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgL-D8-IbN">
+                    <rect key="frame" x="162.66666666666666" y="425" width="88.666666666666657" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6Of-JV-Dex"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="firebaseLogout:" destination="-1" eventType="touchUpInside" id="a9d-M4-Ayz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tgL-D8-IbN" firstAttribute="trailing" secondItem="mrX-1h-R4N" secondAttribute="trailing" id="6JZ-In-Bh0"/>
+                <constraint firstItem="tgL-D8-IbN" firstAttribute="leading" secondItem="mrX-1h-R4N" secondAttribute="leading" id="OMt-Qo-4We"/>
+                <constraint firstItem="mrX-1h-R4N" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dBM-L6-UC6"/>
+                <constraint firstItem="tgL-D8-IbN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="162.66666666666666" id="eEO-0i-H4A"/>
+                <constraint firstItem="mrX-1h-R4N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fCN-iW-XOc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tgL-D8-IbN" secondAttribute="bottom" constant="281" id="nii-Oy-jhH"/>
+                <constraint firstItem="tgL-D8-IbN" firstAttribute="centerX" secondItem="mrX-1h-R4N" secondAttribute="centerX" id="okh-Fu-JBk"/>
+                <constraint firstItem="tgL-D8-IbN" firstAttribute="top" secondItem="mrX-1h-R4N" secondAttribute="bottom" constant="46.333333333333314" id="qlY-3W-2lI"/>
+            </constraints>
+            <point key="canvasLocation" x="130" y="58"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
