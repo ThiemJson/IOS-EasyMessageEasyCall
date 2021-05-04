@@ -9,5 +9,8 @@ target 'EasyMessageEasyCall' do
   pod 'FBSDKLoginKit'
   pod 'GoogleSignIn'
   pod 'Firebase/Auth'
-
+  pod 'FirebaseUI'
+  pod 'FirebaseUI/OAuth'
+  pod 'FirebaseUI/Phone'
+  
 end

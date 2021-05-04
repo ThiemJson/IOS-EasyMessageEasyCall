@@ -26,7 +26,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5s9sei-hfza-vincent-guth" translatesAutoresizingMaskIntoConstraints="NO" id="371-Xm-PTs">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="371-Xm-PTs">
                     <rect key="frame" x="107" y="113" width="200" height="200"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="371-Xm-PTs" secondAttribute="height" multiplier="1:1" id="OPT-eK-Gvk"/>
@@ -121,8 +121,8 @@
         </designable>
     </designables>
     <resources>
-        <image name="5s9sei-hfza-vincent-guth" width="2048" height="1367"/>
         <image name="email" width="24" height="16"/>
+        <image name="iTunesArtwork" width="512" height="512"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
